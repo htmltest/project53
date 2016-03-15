@@ -1,0 +1,86 @@
+@font-face {font-family:"NissanAGLight"; src:url("../fonts/nissanaglig_ttf-webfont.eot"); src:url("../fonts/nissanaglig_ttf-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/nissanaglig_ttf-webfont.woff") format("woff"), url("../fonts/nissanaglig_ttf-webfont.ttf") format("truetype"), url("../fonts/nissanaglig_ttf-webfont.svg#nissan_aglight") format("svg"); font-weight:normal; font-style:normal}
+@font-face {font-family:"NissanAGRegular"; src:url("../fonts/nissanagreg_ttf-webfont.eot"); src:url("../fonts/nissanagreg_ttf-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/nissanagreg_ttf-webfont.woff") format("woff"), url("../fonts/nissanagreg_ttf-webfont.ttf") format("truetype"), url("../fonts/nissanagreg_ttf-webfont.svg#nissan_agregular") format("svg"); font-weight:normal; font-style:normal}
+@font-face {font-family:"NissanAGMedium"; src:url("../fonts/nissanagmed_ttf-webfont.eot"); src:url("../fonts/nissanagmed_ttf-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/nissanagmed_ttf-webfont.woff") format("woff"), url("../fonts/nissanagmed_ttf-webfont.ttf") format("truetype"), url("../fonts/nissanagmed_ttf-webfont.svg#nissan_agmedium") format("svg"); font-weight:normal; font-style:normal}
+@font-face {font-family:"NissanAGBold"; src:url("../fonts/nissanagbol_ttf-webfont.eot"); src:url("../fonts/nissanagbol_ttf-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/nissanagbol_ttf-webfont.woff") format("woff"), url("../fonts/nissanagbol_ttf-webfont.ttf") format("truetype"), url("../fonts/nissanagbol_ttf-webfont.svg#nissan_agbold") format("svg"); font-weight:normal; font-style:normal}
+
+html {min-width:320px; height:100%}
+
+body {min-width:320px; height:100%; margin:0; padding:0; font:18px/24px NissanAGRegular, verdana, geneva, sans-serif; color:#414141; background:#eee}
+
+@media (max-width:1000px) {
+    body {font-size:14px; line-height:18px}
+}
+
+a {outline:none; color:#999}
+a:hover {text-decoration:none}
+
+img {border:none}
+
+.wrapper {min-width:320px; width:100%; min-height:100%; background:url(../images/bg.png) no-repeat center; background-size:cover}
+.wrapper-inner {max-width:1000px; width:70%; margin:0 auto; padding:49px 0}
+
+@media (max-width:1000px) {
+    .wrapper-inner {width:auto; padding:20px}
+}
+
+.title {text-transform:uppercase; font:30px/43px NissanAGMedium, verdana, geneva, sans-serif; text-align:center}
+.title span {color:#c42336}
+
+@media (max-width:1000px) {
+    .title {font-size:23px; line-height:33px}
+}
+
+.timer-title {text-transform:uppercase; text-align:center; color:#c42336; padding:60px 0 26px 0}
+
+@media (max-width:1000px) {
+    .timer-title {padding:47px 0 20px 0}
+}
+
+.timer {text-transform:uppercase; width:320px; height:100px; margin:0 auto; background:#fff; box-shadow:inset 3px 3px 1px rgba(0, 0, 0, .12); text-align:center; color:#c42336; font:36px/100px NissanAGLight, verdana, geneva, sans-serif}
+.timer span {font:69px/100px NissanAGRegular, verdana, geneva, sans-serif}
+
+@media (max-width:1000px) {
+    .timer {font-size:28px; line-height:78px; height:78px; width:auto}
+    .timer span {font-size:54px; line-height:78px}
+}
+
+.subscribe-title {text-transform:uppercase; text-align:center; font:18px/24px NissanAGBold, verdana, geneva, sans-serif; padding:75px 0 0 0}
+
+@media (max-width:1000px) {
+    .subscribe-title {padding:58px 0 0 0}
+}
+
+form {padding:4px 0 0 0; margin:0}
+
+.form-row {text-align:center; padding:20px 0 0 0}
+.form-row-inner {display:inline-block; vertical-align:top}
+
+@media (max-width:1000px) {
+    .form-row-inner {display:block}
+}
+
+.form-input {float:left; position:relative; background:#fff; width:340px}
+.form-input span {display:none; position:absolute; left:18px; top:9px; color:#999; font:18px/30px NissanAGLight, verdana, geneva, sans-serif; text-transform:uppercase}
+.form-input input {position:relative; z-index:2; vertical-align:top; border:1px solid #e1e1e1; width:100%; height:49px; margin:0; padding:9px 18px 8px 18px; outline:none; background:url(../images/blank.gif); box-sizing:border-box; color:#414141; font:18px/30px NissanAGLight, verdana, geneva, sans-serif; -webkit-appearance:none}
+.form-input input.error {border-color:#c42336}
+.form-input label.error {display:none !important}
+
+@media (max-width:1000px) {
+    .form-input {float:none; width:auto}
+}
+
+.form-submit {float:left; margin:0 0 0 11px}
+.form-submit input {vertical-align:top; border:none; background:#c42336; width:208px; height:49px; margin:0; padding:0; outline:none; cursor:pointer; color:#fff; text-align:center; text-transform:uppercase; font:18px/49px NissanAGRegular, verdana, geneva, sans-serif; -webkit-appearance:none}
+.form-submit input:hover {background-color:#bb1833}
+
+@media (max-width:1000px) {
+    .form-submit {float:none; margin:20px 0 0 0}
+    .form-submit input {width:100%}
+}
+
+.form-checkbox {display:table; position:relative}
+.form-checkbox div {display:table-cell; vertical-align:middle; padding:0 0 0 45px; text-align:left}
+.form-checkbox div span {position:absolute; left:0; top:50%; margin-top:-12px; display:block; overflow:hidden; width:21px; height:21px; background:#fff; border:1px solid #e1e1e1; cursor:pointer}
+.form-checkbox div span input {position:absolute; left:-99px; top:-99px}
+.form-checkbox div span.checked:after {content:""; display:block; width:11px; height:11px; position:absolute; left:5px; top:5px; background:#e1e1e1}
+.form-checkbox label.error {display:none !important}
