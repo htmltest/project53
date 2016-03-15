@@ -74,7 +74,7 @@ form {padding:4px 0 0 0; margin:0}
 .form-submit input:hover {background-color:#bb1833}
 
 @media (max-width:1000px) {
-    .form-submit {float:none; margin:20px 0 0 0}
+    .form-submit {float:none; margin:80px 0 0 0}
     .form-submit input {width:100%}
 }
 
@@ -84,3 +84,7 @@ form {padding:4px 0 0 0; margin:0}
 .form-checkbox div span input {position:absolute; left:-99px; top:-99px}
 .form-checkbox div span.checked:after {content:""; display:block; width:11px; height:11px; position:absolute; left:5px; top:5px; background:#e1e1e1}
 .form-checkbox label.error {display:none !important}
+
+@media (max-width:1000px) {
+    .form-checkbox {margin-top:-130px}
+}
