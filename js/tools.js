@@ -26,7 +26,28 @@
 
         $('form').validate({
             ignore: '',
+            invalidHandler: function(form, validatorcalc) {
+                validatorcalc.showErrors();
+                var errors = validatorcalc.numberOfInvalids();
+                if (errors) {
+                    $('.text-error').addClass('visible');
+                } else {
+                    $('.text-error').removeClass('visible');
+                }
+
+                $('.form-checkbox').each(function() {
+                    var curField = $(this);
+                    if (curField.find('input.error').length > 0) {
+                        $('.text-error').addClass('visible');
+                        curField.addClass('error');
+                    } else {
+                        $('.text-error').removeClass('visible');
+                        curField.removeClass('error');
+                    }
+                });
+            },
             submitHandler: function(form) {
+                $('.text-error').removeClass('visible');
                 $('.overlay').show();
                 $('.window').show();
             }

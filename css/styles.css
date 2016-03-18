@@ -82,12 +82,16 @@ form {padding:4px 0 0 0; margin:0}
 .form-checkbox div {display:table-cell; vertical-align:middle; padding:0 0 0 45px; text-align:left}
 .form-checkbox div span {position:absolute; left:0; top:50%; margin-top:-12px; display:block; overflow:hidden; width:21px; height:21px; background:#fff; border:1px solid #e1e1e1; cursor:pointer}
 .form-checkbox div span input {position:absolute; left:-99px; top:-99px}
+.form-checkbox.error div span:before {content:""; display:block; width:100%; height:100%; position:absolute; left:0; top:0; border:1px solid #c42336; box-sizing:border-box}
 .form-checkbox div span.checked:after {content:""; display:block; width:11px; height:11px; position:absolute; left:5px; top:5px; background:#e1e1e1}
 .form-checkbox label.error {display:none !important}
 
 @media (max-width:1000px) {
     .form-checkbox {margin-top:-130px}
 }
+
+.text-error {visibility:hidden; text-align:center; font-family:NissanAGMedium, verdana, geneva, sans-serif; padding:24px 0 0 0}
+.text-error.visible {visibility:visible}
 
 .overlay {display:none; position:fixed; left:0; top:0; width:100%; height:100%; z-index:98; background:#000; background:rgba(0, 0, 0, .3)}
 
