@@ -3,9 +3,9 @@
 @font-face {font-family:"NissanAGMedium"; src:url("../fonts/nissanagmed_ttf-webfont.eot"); src:url("../fonts/nissanagmed_ttf-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/nissanagmed_ttf-webfont.woff") format("woff"), url("../fonts/nissanagmed_ttf-webfont.ttf") format("truetype"), url("../fonts/nissanagmed_ttf-webfont.svg#nissan_agmedium") format("svg"); font-weight:normal; font-style:normal}
 @font-face {font-family:"NissanAGBold"; src:url("../fonts/nissanagbol_ttf-webfont.eot"); src:url("../fonts/nissanagbol_ttf-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/nissanagbol_ttf-webfont.woff") format("woff"), url("../fonts/nissanagbol_ttf-webfont.ttf") format("truetype"), url("../fonts/nissanagbol_ttf-webfont.svg#nissan_agbold") format("svg"); font-weight:normal; font-style:normal}
 
-html {min-width:320px; height:100%}
+html {min-width:320px}
 
-body {min-width:320px; height:100%; margin:0; padding:0; font:18px/24px NissanAGRegular, verdana, geneva, sans-serif; color:#414141; background:#eee}
+body {min-width:320px; margin:0; padding:0; font:18px/24px NissanAGRegular, verdana, geneva, sans-serif; color:#414141; background:#eee}
 
 @media (max-width:1000px) {
     body {font-size:14px; line-height:18px}
@@ -16,7 +16,7 @@ a:hover {text-decoration:none}
 
 img {border:none}
 
-.wrapper {min-width:320px; width:100%; min-height:100%; background:url(../images/bg.png) no-repeat center; background-size:cover}
+.wrapper {min-width:320px; width:100%; background:url(../images/bg.png) no-repeat center; background-size:cover}
 .wrapper-inner {max-width:1000px; width:70%; margin:0 auto; padding:49px 0}
 
 @media (max-width:1000px) {
@@ -87,4 +87,18 @@ form {padding:4px 0 0 0; margin:0}
 
 @media (max-width:1000px) {
     .form-checkbox {margin-top:-130px}
+}
+
+.overlay {display:none; position:fixed; left:0; top:0; width:100%; height:100%; z-index:98; background:#000; background:rgba(0, 0, 0, .3)}
+
+.window {display:none; position:fixed; left:50%; top:50%; width:479px; height:283px; margin:-142px 0 0 -240px; background:#fff; z-index:99; text-align:center; box-shadow:2px 2px 3px rgba(0, 0, 0, .4); font-size:20px; line-height:24px}
+.window-title {padding:60px 0 0 0; font-family:NissanAGMedium, verdana, geneva, sans-serif}
+.window-text {padding:13px 0 0 0}
+.window-link {padding:34px 0 0 0}
+.window-link a {display:inline-block; vertical-align:top; text-decoration:none; color:#fff; width:202px; height:49px; line-height:49px; background:#ce2541}
+.window-link a:hover {background:#bb1833}
+.window-close {display:block; position:absolute; right:19px; top:20px; width:23px; height:23px; background:url(../images/window-close.png)}
+
+@media (max-width:1000px) {
+    .window {width:300px; margin-left:-150px; font-size:16px; line-height:20px}
 }

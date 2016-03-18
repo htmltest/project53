@@ -25,7 +25,29 @@
         });
 
         $('form').validate({
-            ignore: ''
+            ignore: '',
+            submitHandler: function(form) {
+                $('.overlay').show();
+                $('.window').show();
+            }
+        });
+
+        $('.overlay').click(function() {
+            $('.window').hide();
+            $('.overlay').hide();
+        });
+
+        $('body').keyup(function(e) {
+            if (e.keyCode == 27) {
+                $('.window').hide();
+                $('.overlay').hide();
+            }
+        });
+
+        $('.window-close, .window-link a').click(function(e) {
+            $('.window').hide();
+            $('.overlay').hide();
+            e.preventDefault();
         });
 
     });
