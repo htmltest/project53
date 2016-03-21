@@ -30,7 +30,8 @@ img {border:none}
     .title {font-size:23px; line-height:33px}
 }
 
-.timer-title {text-transform:uppercase; text-align:center; color:#fff; padding:60px 0 26px 0}
+.timer-title {text-transform:uppercase; text-align:center; color:#fff; padding:24px 0 26px 0}
+.timer-title:before {content:""; display:block; width:60px; height:7px; background:#ce2541; margin:0 auto 29px auto}
 
 @media (max-width:1000px) {
     .timer-title {padding:47px 0 20px 0}
