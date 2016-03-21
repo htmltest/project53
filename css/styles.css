@@ -5,18 +5,18 @@
 
 html {min-width:320px}
 
-body {min-width:320px; margin:0; padding:0; font:18px/24px NissanAGRegular, verdana, geneva, sans-serif; color:#414141; background:#eee}
+body {min-width:320px; margin:0; padding:0; font:18px/24px NissanAGRegular, verdana, geneva, sans-serif; color:#fff; background:#1d304e}
 
 @media (max-width:1000px) {
     body {font-size:14px; line-height:18px}
 }
 
-a {outline:none; color:#999}
+a {outline:none; color:#d8d8d8}
 a:hover {text-decoration:none}
 
 img {border:none}
 
-.wrapper {min-width:320px; width:100%; background:url(../images/bg.png) no-repeat center; background-size:cover}
+.wrapper {min-width:320px; width:100%; background:url(../images/bg.jpg) no-repeat center; background-size:cover}
 .wrapper-inner {max-width:1000px; width:70%; margin:0 auto; padding:49px 0}
 
 @media (max-width:1000px) {
@@ -24,13 +24,13 @@ img {border:none}
 }
 
 .title {text-transform:uppercase; font:30px/43px NissanAGMedium, verdana, geneva, sans-serif; text-align:center}
-.title span {color:#c42336}
+.title span {color:#ce2541}
 
 @media (max-width:1000px) {
     .title {font-size:23px; line-height:33px}
 }
 
-.timer-title {text-transform:uppercase; text-align:center; color:#c42336; padding:60px 0 26px 0}
+.timer-title {text-transform:uppercase; text-align:center; color:#fff; padding:60px 0 26px 0}
 
 @media (max-width:1000px) {
     .timer-title {padding:47px 0 20px 0}
@@ -93,9 +93,9 @@ form {padding:4px 0 0 0; margin:0}
 .text-error {visibility:hidden; text-align:center; font-family:NissanAGMedium, verdana, geneva, sans-serif; padding:24px 0 0 0}
 .text-error.visible {visibility:visible}
 
-.overlay {display:none; position:fixed; left:0; top:0; width:100%; height:100%; z-index:98; background:#000; background:rgba(0, 0, 0, .3)}
+.overlay {display:none; position:fixed; left:0; top:0; width:100%; height:100%; z-index:98; background:#000; background:rgba(0, 0, 0, .2)}
 
-.window {display:none; position:fixed; left:50%; top:50%; width:479px; height:283px; margin:-142px 0 0 -240px; background:#fff; z-index:99; text-align:center; box-shadow:2px 2px 3px rgba(0, 0, 0, .4); font-size:20px; line-height:24px}
+.window {display:none; position:fixed; left:50%; top:50%; width:479px; height:283px; margin:-142px 0 0 -240px; background:#fff; color:#000; z-index:99; text-align:center; box-shadow:2px 2px 3px rgba(0, 0, 0, .4); font-size:20px; line-height:24px}
 .window-title {padding:60px 0 0 0; font-family:NissanAGMedium, verdana, geneva, sans-serif}
 .window-text {padding:13px 0 0 0}
 .window-link {padding:34px 0 0 0}
